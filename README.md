@@ -1,4 +1,4 @@
-# 🚀 React Agile Track System
+# 🚀 Agile Track System
 
 ## 📖 Project Overview
 
