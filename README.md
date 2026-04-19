@@ -1,70 +1,147 @@
-# Getting Started with Create React App
+# 🚀 React Agile Track System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📖 Project Overview
 
-## Available Scripts
+The **React Agile Track System** is a Single Page Application (SPA) developed as part of my **Wipro Training Program under Techademy**, guided by my instructor **Prasad**.
 
-In the project directory, you can run:
+This application helps teams efficiently manage agile workflows by enabling task tracking, team collaboration, and administrative control.
 
-### `npm start`
+### 🔹 Key Objectives
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Streamline task management in Agile/Scrum environments
+* Provide role-based access for Admins and Employees
+* Enable real-time tracking of task progress
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## ✨ Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* 🔐 **User Authentication** (Login & Signup)
+* 👥 **Role-Based Access Control** (Admin & Employee)
+* 📊 **Scrum Team Management**
+* 📌 **Task Assignment & Tracking**
+* 🔄 **Task Status Updates** (To Do, In Progress, Done)
+* 🛠️ **Admin Controls**
 
-### `npm run build`
+  * Add/Manage Users
+  * Assign Tasks
+  * Update Task Status
+* 👤 **User Profile & Task History**
+* 📱 **Responsive UI using Bootstrap**
+* 🌐 **JSON Server as Fake REST API**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📂 Folder Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+react-agile-track-system/
+│── public/                       # Static files  
+│── src/  
+│   ├── components/  
+│   │   ├── Dashboard/
+│   │   │   └── Dashboard.js      # Displays Scrum Teams  
+│   │   ├── Login/
+│   │   │   └── Login.js          # Login Page  
+│   │   ├── Signup/
+│   │   │   └── SignUp.js         # User Registration  
+│   │   ├── ScrumDetails/
+│   │   │   └── ScrumDetails.js   # Tasks & Users in Scrum  
+│   │   ├── UserProfile/
+│   │   │   └── UserProfile.js    # User Task History  
+│   ├── context/  
+│   │   └── UserContext.js        # Global Auth State  
+│   ├── App.js                    # Main Component  
+│   ├── index.js                  # Entry Point  
+│── db.json                       # Fake Backend Data  
+│── package.json                  # Dependencies  
+│── README.md                     # Documentation  
+```
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## ⚡ Getting Started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Follow these steps to run the project locally:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 1️⃣ Clone the Repository
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+git clone https://github.com/your-username/react-agile-track-system.git
+cd react-agile-track-system
+```
 
-## Learn More
+### 2️⃣ Install Dependencies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 3️⃣ Start JSON Server (Backend)
 
-### Code Splitting
+```bash
+npm run json-start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+🔹 Runs at: **[http://localhost:4000](http://localhost:4000)**
 
-### Analyzing the Bundle Size
+### 4️⃣ Start React App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+npm start
+```
 
-### Making a Progressive Web App
+🔹 Runs at: **[http://localhost:3000](http://localhost:3000)**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 📌 User Roles & Permissions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+| Role         | Permissions                                   |
+| ------------ | --------------------------------------------- |
+| **Admin**    | Add/Manage Users, Assign Tasks, Update Status |
+| **Employee** | View Tasks, Track Progress                    |
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🛠️ Tech Stack
 
-### `npm run build` fails to minify
+* **Frontend:** React.js
+* **State Management:** Context API
+* **Styling:** Bootstrap
+* **Backend (Mock):** JSON Server
+* **Tools:** Node.js, npm
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 🤝 Contribution Guidelines
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a new branch
+
+   ```bash
+   git checkout -b feature-branch
+   ```
+3. Commit your changes
+
+   ```bash
+   git commit -m "Added new feature"
+   ```
+4. Push to GitHub
+
+   ```bash
+   git push origin feature-branch
+   ```
+5. Open a Pull Request
+
+---
+
+## 📬 Contact
+
+For any queries or suggestions, feel free to reach out:
+
+📧 **[satyam.kumar1183@gmail.com](mailto:satyam.kumar1183@gmail.com)**
+
+---
