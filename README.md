@@ -2,7 +2,7 @@
 
 ## 📖 Project Overview
 
-The **React Agile Track System** is a Single Page Application (SPA) developed as part of my **Wipro Training Program under Techademy**, guided by my instructor **Prasad**.
+The **React Agile Track System** is a Single Page Application (SPA) developed as part of my **Wipro Training Program under Techademy**.
 
 This application helps teams efficiently manage agile workflows by enabling task tracking, team collaboration, and administrative control.
 
